@@ -1,0 +1,44 @@
+.DashContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 98vw;
+  padding: 70px 1vw 0 1vw;
+  background-color: black;
+}
+
+
+.FeedContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.FeedItem {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  word-wrap: break-word;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
+  --bs-text-opacity: 1;
+  color: white;
+}
+
+.title {
+  text-decoration: none;
+  color: lightblue;
+}
+.title:hover {
+  text-decoration: underline;
+  color: lightcyan;
+}
+
+.datestr {
+  color:rgb(212, 212, 212);
+  font-family: Arial, sans-serif;
+  font-size: 0.8em;
+}

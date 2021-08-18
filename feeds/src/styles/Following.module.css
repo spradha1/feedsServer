@@ -1,0 +1,74 @@
+.Following {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  justify-self: flex-start;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 70px 10px 0 10px;
+  background-color: black;
+}
+
+
+.Content {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+
+.AddLink {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  width: 100%;
+}
+
+.AddButton {
+  margin-left: 10px;
+}
+
+.LinkItem {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  width: 100%;
+  margin-top: 1em;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
+  --bs-text-opacity: 1;
+  color: white;
+}
+
+.LinkText {
+  text-align: center;
+  padding: 10px;
+}
+
+.DeleteButton{
+  color: red !important;
+  text-decoration: none !important;
+}
+.DeleteButton:hover {
+  color: rgb(201, 155, 155) !important;
+}
+
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 500px) {
+
+  .Following {
+    font-size: 0.85em;
+  }
+
+  .AddLink {
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .LinkText {
+    padding: 10px 5px;
+  }
+}
